@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Dasar</title>
+    <style>
+        .header{
+            min-height: 50px;
+            text-align: center;
+        }
+        .content{
+            background-color: rgb(226, 35, 99);
+            min-height: 500px;
+            overflow: auto;
+            
+        }
+        .footer{
+            background-color: rgb(250, 116, 232);
+            min-height: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        .container{
+            width: 800px;
+            margin: auto;
+        }
+        .menu ul{
+            padding: 0;
+        }
+        ul li{
+            display: inline-block;
+        }
+        .menu ul li{
+            display:inline block;
+            position: relative;
+        }
+        .menu ul li a{
+            padding:10px;
+            text-decoration: none;
+        }
+        .logo img{
+            width: 120px;
+        }
+        .thumbnail{
+            background-color:rgba(59, 39, 90, 0.527);
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float:left;
+        }
+        .thumbnail img{
+            width: 100%;
+        }
+        ul.submenu{
+            background-color: rgb(226, 211, 192);
+            border: 1px solid rgb(90, 46, 193);
+            text-align: left;
+            position: absolute;
+            top:20px;
+            left: 0;
+            display: none;
+        }
+        ul.submenu li{
+            display: block;
+        }
+        ul.submenu li a {
+            display: block;
+            padding: 5px 10px;
+        }
+        .menu ul li:hover ul.submenu{
+            display: block;
+        }
+        .jumbotron{
+            width: 100%;
+            padding:80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: aliceblue;
+            background-color: rgb(233, 124, 112);
+            background-image: url(ROG2.png);
+            background-size: cover;
+        }
+        .botom{
+            background-color: rgb(234, 57, 113);
+            border-radius: 9px;
+            padding: 7px;
+            text-decoration: none;
+            color:aliceblue;
+            margin: auto;
+
+        }
+        .botom:hover{
+           border: 1px solid wheat;
+           background-color: rgb(219, 98, 225);
+           box-shadow: 0 0 16px 18px rgb(217, 22, 119);
+           transition: 700ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class ="logo">
+                <img src="logoku.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li>
+                        <a href="">About</a>
+                        <ul class="submenu">
+                                <li><a href="">cv</a></li>
+                                <li><a href="">education</a></li>
+                                <li><a href="">portofolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="hoverlay">
+            </div>
+            <h2>welcome ti My Homepage</h2>
+            <p>selamat datang di websate saya, silahkan bereksplorasi dan berimajinasi</p>
+        </div>
+        <div class="content">
+            <h2 style="margin-left:10px">Our Product</h2>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 1</h2>
+                <p>Rp 250.000</p>
+                <a class="botom" href="">Detail</a>
+
+                
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 2</h2>
+                <p>Rp 150.000</p>
+                <a class="botom" href="">Detail</a>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250X150" alt="tes">
+                <h2>Product 3</h2>
+                <p>Rp 50.000</p>
+                <a class="botom" href="">Detail</a>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 4</h2>
+                <p>Rp 340.000</p>
+                <a class="botom" href="">detail</a>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 5</h2>
+                <p>Rp 90.000</p>
+                <a class="botom" href="">detail</a>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 6</h2>
+                <p>Rp 178.000</p>
+                <a class="botom" href="">detail</a>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 7</h2>
+                <p>Rp 200.000</p>
+                <a class="botom" href="">detail</a>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="tes">
+                <h2>Product 8</h2>
+                <p>Rp 130.000</p>
+                <a class="botom" href="">detail</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Copyright 2024</p>
+        </div>
+    </div>
+</body>
+</html>
